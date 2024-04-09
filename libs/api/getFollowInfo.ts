@@ -1,7 +1,5 @@
-import React from "react";
-
-import { client } from ".";
 import { UserTypes } from "@/type/user";
+import { client } from ".";
 
 const PER_PAGE = 100;
 
@@ -13,8 +11,6 @@ const getFollowInfo = async () => {
   const { data: followersData } = await client().get<Array<UserTypes>>(
     `user/followers?per_page=${PER_PAGE}`
   );
-
-  console.log(followersData, followingData)
 
   return { followingData, followersData };
 };
