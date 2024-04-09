@@ -1,4 +1,4 @@
-import { globalStyle, globalFontFace } from "@vanilla-extract/css";
+import { globalFontFace, globalStyle } from "@vanilla-extract/css";
 import { reset } from "./reset.css";
 
 export const GlobalStyle = [

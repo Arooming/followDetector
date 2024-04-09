@@ -1,6 +1,5 @@
-import Image from "next/image";
-import React from "react";
 import img_github_logo_white from "@/public/image/img_github_logo_white.png";
+import Image from "next/image";
 import * as styles from "../style/Common/header.css";
 
 const Header = () => {
