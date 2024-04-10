@@ -5,7 +5,16 @@ const withVanillaExtract = createVanillaExtractPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["avatars.githubusercontent.com", "localhost"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "localhost",
+      },
+    ],
   },
 };
 
