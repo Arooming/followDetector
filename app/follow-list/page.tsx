@@ -3,7 +3,6 @@
 import Loading from "@/common/Loading";
 import FollowList from "@/component/FollowList";
 import UserInfo from "@/component/UserInfo";
-import getFollowInfo from "@/libs/api/getFollowInfo";
 import useGetFollowInfo from "@/libs/hook/useGetFollowInfo";
 import useGetUserInfo from "@/libs/hook/useGetUserInfo";
 import React from "react";

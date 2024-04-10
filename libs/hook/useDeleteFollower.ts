@@ -10,9 +10,6 @@ const useDeleteFollower = () => {
     onSuccess: () => {
       queryClient.invalidateQueries(["get-follow-info"]);
     },
-    onError: (err) => {
-      console.log(err);
-    },
   });
   return mutation;
 };
