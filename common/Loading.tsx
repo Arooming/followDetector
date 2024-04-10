@@ -2,7 +2,7 @@
 
 import Lottie from "lottie-react";
 import animationData from "../public/lottie/lottie.json";
-import * as styles from "../style/Common/loading.css";
+import * as styles from "../style/Common/Loading.css";
 
 const Loading = () => {
   return (
