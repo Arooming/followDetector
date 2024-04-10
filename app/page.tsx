@@ -1,9 +1,8 @@
 "use client";
 
-import getFollowInfo from "@/libs/api/getFollowInfo";
 import Link from "next/link";
 import { ChangeEvent, useState } from "react";
-import * as styles from "../style/Home/home.css";
+import * as styles from "../style/Home/Home.css";
 
 export interface UserTypes {
   login?: string;
@@ -20,7 +19,6 @@ export default function Home() {
 
   const handleClickBtn = () => {
     sessionStorage.setItem("token", token);
-    getFollowInfo();
   };
 
   return (
@@ -45,7 +43,12 @@ export default function Home() {
             onChange={handleChangeInput}
             className={styles.TokenInput}
           />
-          
+
+          {/* 추후 수정 방향 */}
+          {/* <Link
+            href={{ pathname: "/follow-list", query: { token: token } }}
+            as={"/follow-list"}
+          > */}
           <Link href={"/follow-list"}>
             <button
               type="button"
