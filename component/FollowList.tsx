@@ -26,12 +26,16 @@ const FollowList = ({
       {user.map((list, idx) => {
         return (
           <article key={idx} className={styles.listWrapper}>
-            <p className={styles.title}>
-              {list === matchedList
-                ? "맞팔 중인 사용자"
-                : "내가 팔로우 안 한 사용자"}
-            </p>
-            <ListLayout list={list} isUserInfo={false} />
+            <div className={styles.titleWrapper}>
+              <p className={styles.title}>
+                {list === matchedList
+                  ? "맞팔 중인 사용자"
+                  : "내가 팔로우 안 한 사용자"}
+              </p>
+              <p className={styles.title}>{`${list.length} 명`}</p>
+            </div>
+
+            <ListLayout list={list} isUserInfo={false} isFollowingBtn={list !== matchedList} />
           </article>
         );
       })}

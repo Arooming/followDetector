@@ -16,7 +16,15 @@ export const listWrapper = style({
   flexDirection: "column",
 });
 
+export const titleWrapper = style({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+
+  gap: "1rem",
+});
+
 export const title = style({
-  marginBottom: "2rem",
+  marginBottom: "1rem",
   fontSize: "1.5rem",
 });
