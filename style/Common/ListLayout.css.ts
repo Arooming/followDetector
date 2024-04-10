@@ -15,7 +15,7 @@ export const followWrapper = style({
   alignItems: "center",
   marginTop: "1rem",
 
-  gap: "1rem",
+  gap: "1.2rem",
 });
 
 export const loginInfo = style({
@@ -23,7 +23,7 @@ export const loginInfo = style({
 });
 
 export const followBtn = style({
-  padding: "0.5rem 1.5rem",
+  padding: "0.3rem 1.3rem",
 
   borderRadius: "3rem",
   border: "0.1rem solid #FF3333",
@@ -33,7 +33,7 @@ export const followBtn = style({
 });
 
 export const unfollowBtn = style({
-  padding: "0.5rem 1.5rem",
+  padding: "0.3rem 1.3rem",
 
   borderRadius: "3rem",
   border: "0.1rem solid #3385FF",
