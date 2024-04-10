@@ -14,3 +14,9 @@ export interface FollowInfoDataTypes {
   followingData: Array<UserTypes>;
   followersData: Array<UserTypes>;
 }
+
+export interface ListLayoutTypes {
+  list: Array<UserTypes>;
+  isUserInfo: boolean;
+  isFollowingBtn?: boolean;
+}
