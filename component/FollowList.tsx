@@ -1,5 +1,6 @@
+import ListLayout from "@/common/ListLayout";
 import { FollowInfoDataTypes } from "@/type/user";
-import Image from "next/image";
+import * as styles from "../style/FollowList/FollowList.css";
 
 const FollowList = ({
   followInfoData,
@@ -21,31 +22,16 @@ const FollowList = ({
   const user = [matchedList, unfollowingList];
 
   return (
-    <section>
+    <section className={styles.followListWrapper}>
       {user.map((list, idx) => {
         return (
-          <article key={idx}>
-            <p>
+          <article key={idx} className={styles.listWrapper}>
+            <p className={styles.title}>
               {list === matchedList
                 ? "맞팔 중인 사용자"
                 : "내가 팔로우 안 한 사용자"}
             </p>
-            {list.map(({ login, avatar_url, bio }) => {
-              return (
-                <div key={login}>
-                  {avatar_url && (
-                    <Image
-                      width={100}
-                      height={100}
-                      src={avatar_url}
-                      alt={"유저-이미지"}
-                    />
-                  )}
-                  <p>{login}</p>
-                  <p>{bio}</p>
-                </div>
-              );
-            })}
+            <ListLayout list={list} isUserInfo={false} />
           </article>
         );
       })}
