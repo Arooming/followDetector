@@ -4,11 +4,7 @@ export const client = () => {
   const client = axios.create({
     baseURL: process.env.NEXT_PUBLIC_BASE_URL,
     headers: {
-      // 디스크 캐시를 방지하기 위한 방법인데 이대로 하면 CORS 에러 발생
-      // "Cache-Control": "no-cache",
-      // Pragma: "no-cache",
-      // Expires: "0",
-
+      "If-None-Match": "",
       Accept: "application/vnd.github+json",
     },
   });
