@@ -1,4 +1,4 @@
-import axios, { AxiosRequestHeaders } from "axios";
+import axios from "axios";
 
 export const client = () => {
   const client = axios.create({
@@ -9,22 +9,9 @@ export const client = () => {
     },
   });
 
-  // interceptors: 요청 전이나 응답 전, 특정 작업 수행
-  // interceptors.request.use(): 요청 인터셉터 -> 요청 전 수행할 작업
-  client.interceptors.request.use(
-    (config) => {
-      const token = sessionStorage.getItem("token");
-      if (token) {
-        (
-          config.headers as AxiosRequestHeaders
-        ).Authorization = `Bearer ${token}`;
-      }
-      return config;
-    },
-    (error) => {
-      return Promise.reject(error);
-    }
-  );
+  const token = sessionStorage.getItem("token");
+  // token을 헤더에 저장
+  client.defaults.headers.common["Authorization"] = `Bearer ${token}`;
 
   return client;
 };
