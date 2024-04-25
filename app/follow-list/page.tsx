@@ -12,7 +12,9 @@ const page = () => {
   const { isLoading: followInfoLoading, data: followInfoData } =
     useGetFollowInfo();
 
-  return userInfoLoading || followInfoLoading ? (
+  const isLoading = userInfoLoading || followInfoLoading;
+
+  return isLoading ? (
     <Loading />
   ) : (
     <React.Fragment>
