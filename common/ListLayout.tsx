@@ -4,18 +4,18 @@ import { ListLayoutTypes } from "@/type/user";
 import Image from "next/image";
 import * as styles from "../style/Common/ListLayout.css";
 
-const ListLayout = ({ list, isUserInfo, isFollowingBtn }: ListLayoutTypes) => {
+const ListLayout = ({ list, isUserInfo, listType }: ListLayoutTypes) => {
   const putMuation = usePutFollower();
   const deleteMutation = useDeleteFollower();
 
   const handleClickFollowBtn = ({
-    isFollowingBtn,
+    listType,
     login,
   }: {
-    isFollowingBtn?: boolean;
+    listType?: boolean;
     login: string;
   }) => {
-    isFollowingBtn ? putMuation(login) : deleteMutation(login);
+    listType ? putMuation(login) : deleteMutation(login);
   };
 
   return list.map(({ login, avatar_url }) => {
@@ -36,12 +36,10 @@ const ListLayout = ({ list, isUserInfo, isFollowingBtn }: ListLayoutTypes) => {
           {!isUserInfo && (
             <button
               type="button"
-              className={isFollowingBtn ? styles.followBtn : styles.unfollowBtn}
-              onClick={() =>
-                login && handleClickFollowBtn({ isFollowingBtn, login })
-              }
+              className={listType ? styles.followBtn : styles.unfollowBtn}
+              onClick={() => login && handleClickFollowBtn({ listType, login })}
             >
-              {isFollowingBtn ? "팔로우" : "언팔로우"}
+              {listType ? "팔로우" : "언팔로우"}
             </button>
           )}
         </div>

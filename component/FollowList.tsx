@@ -45,7 +45,7 @@ const FollowList = ({
             <ListLayout
               list={matched ? matched : unfollowed}
               isUserInfo={false}
-              isFollowingBtn={!matched}
+              listType={!matched}
             />
           </article>
         );
