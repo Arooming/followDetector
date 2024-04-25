@@ -4,12 +4,6 @@ import Link from "next/link";
 import { ChangeEvent, useState } from "react";
 import * as styles from "../style/Home/Home.css";
 
-export interface UserTypes {
-  login?: string;
-  bio?: string;
-  avatar_url?: string;
-}
-
 export default function Home() {
   const [token, setToken] = useState("");
 
