@@ -1,3 +1,4 @@
+import { QUERY_KEY } from "@/constants/queryKey";
 import { useMutation, useQueryClient } from "react-query";
 import deleteFollower from "../api/deleteFollower";
 
@@ -8,7 +9,7 @@ const useDeleteFollower = () => {
       return deleteFollower(login);
     },
     onSuccess: () => {
-      queryClient.invalidateQueries(["get-follow-info"]);
+      queryClient.invalidateQueries(QUERY_KEY.followInfo);
     },
   });
   return mutation.mutate;
