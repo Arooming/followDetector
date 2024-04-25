@@ -28,7 +28,6 @@ const ListLayout = ({ list, isUserInfo, isFollowingBtn }: ListLayoutTypes) => {
             src={avatar_url}
             alt={"유저-이미지"}
             priority={true}
-            style={{ marginTop: "1rem" }}
           />
         )}
         <div className={styles.followWrapper}>
