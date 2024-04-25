@@ -15,7 +15,7 @@ const ListLayout = ({ list, isUserInfo, isFollowingBtn }: ListLayoutTypes) => {
     isFollowingBtn?: boolean;
     login: string;
   }) => {
-    isFollowingBtn ? putMuation.mutate(login) : deleteMutation.mutate(login);
+    isFollowingBtn ? putMuation(login) : deleteMutation(login);
   };
 
   return list.map(({ login, avatar_url }) => {

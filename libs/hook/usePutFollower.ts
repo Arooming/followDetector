@@ -11,7 +11,7 @@ const usePutFollower = () => {
       queryClient.invalidateQueries(["get-follow-info"]);
     },
   });
-  return mutation;
+  return mutation.mutate;
 };
 
 export default usePutFollower;

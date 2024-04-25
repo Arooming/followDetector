@@ -11,7 +11,7 @@ const useDeleteFollower = () => {
       queryClient.invalidateQueries(["get-follow-info"]);
     },
   });
-  return mutation;
+  return mutation.mutate;
 };
 
 export default useDeleteFollower;
