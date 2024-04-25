@@ -1,12 +1,12 @@
 export interface UserProfileInfoTypes {
-  login?: string;
+  login: string;
   avatar_url?: string;
   followers?: number;
   following?: number;
 }
 
 export interface UserTypes {
-  login?: string;
+  login: string;
   avatar_url?: string;
 }
 
