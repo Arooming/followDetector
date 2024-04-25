@@ -22,38 +22,33 @@ export default function Home() {
   };
 
   return (
-    <main className={styles.HomeWrapper}>
-      <section className={styles.HomeContents}>
-        <div className={styles.TokenLinkBox}>
+    <main className={styles.homeWrapper}>
+      <section className={styles.homeContents}>
+        <div className={styles.tokenLinkBox}>
           <Link
             href={"https://github.com/settings/tokens"}
-            className={styles.TokenLinkBtn}
+            className={styles.tokenLinkBtn}
           >
             Github Token 만들러 가기
           </Link>
-          <p className={styles.TokenInfoText}>
+          <p className={styles.tokenInfoText}>
             ﹒ 토큰 발급 시 권한 user(Update ALL user data)를 체크해주세요!
           </p>
         </div>
 
-        <article className={styles.TokenInputBox}>
+        <article className={styles.tokenInputBox}>
           <input
             type="text"
             placeholder="Github Token을 입력해주세요"
             onChange={handleChangeInput}
-            className={styles.TokenInput}
+            className={styles.tokenInput}
           />
 
-          {/* 추후 수정 방향 */}
-          {/* <Link
-            href={{ pathname: "/follow-list", query: { token: token } }}
-            as={"/follow-list"}
-          > */}
           <Link href={"/follow-list"}>
             <button
               type="button"
               onClick={handleClickBtn}
-              className={styles.TokenInputNextBtn}
+              className={styles.tokenInputNextBtn}
               disabled={token.length === 0}
             >
               나의 맞팔 확인하기

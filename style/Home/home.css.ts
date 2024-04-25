@@ -1,6 +1,6 @@
 import { style } from "@vanilla-extract/css";
 
-export const HomeWrapper = style({
+export const homeWrapper = style({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -10,7 +10,7 @@ export const HomeWrapper = style({
   padding: "0 15rem",
 });
 
-export const HomeContents = style({
+export const homeContents = style({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -26,13 +26,13 @@ export const HomeContents = style({
   backgroundColor: "#333",
 });
 
-export const TokenLinkBox = style({
+export const tokenLinkBox = style({
   display: "flex",
   flexDirection: "column",
   gap: "1rem",
 });
 
-export const TokenLinkBtn = style({
+export const tokenLinkBtn = style({
   width: "fit-content",
   padding: "1rem",
 
@@ -46,19 +46,19 @@ export const TokenLinkBtn = style({
   textDecoration: "none",
 });
 
-export const TokenInfoText = style({
+export const tokenInfoText = style({
   color: "#f5f5f5",
   fontSize: "1.3rem",
 });
 
-export const TokenInputBox = style({
+export const tokenInputBox = style({
   display: "flex",
   flexDirection: "column",
 
   gap: "2rem",
 });
 
-export const TokenInput = style({
+export const tokenInput = style({
   width: "100%",
   height: "5rem",
   padding: "2rem",
@@ -71,7 +71,7 @@ export const TokenInput = style({
   },
 });
 
-export const TokenInputNextBtn = style({
+export const tokenInputNextBtn = style({
   width: "100%",
   height: "4.5rem",
 
