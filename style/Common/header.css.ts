@@ -1,6 +1,6 @@
 import { style } from "@vanilla-extract/css";
 
-export const HeaderWrapper = style({
+export const headerWrapper = style({
   display: "flex",
   alignItems: "center",
   width: "100%",
@@ -9,7 +9,7 @@ export const HeaderWrapper = style({
   backgroundColor: "#333",
 });
 
-export const HeaderTitle = style({
+export const headerTitle = style({
   paddingLeft: "2rem",
   fontSize: "2rem",
   color: "#fafbfc",
