@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ChangeEvent, useState } from "react";
-import * as styles from "../style/Home/Home.css";
+import * as styles from "../style/Home/home.css";
 
 export default function Home() {
   const [token, setToken] = useState("");

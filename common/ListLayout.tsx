@@ -2,7 +2,7 @@ import useDeleteFollower from "@/libs/hook/useDeleteFollower";
 import usePutFollower from "@/libs/hook/usePutFollower";
 import { ListLayoutTypes } from "@/type/user";
 import Image from "next/image";
-import * as styles from "../style/Common/ListLayout.css";
+import * as styles from "../style/Common/listLayout.css";
 
 const ListLayout = ({ list, isUserInfo, listType }: ListLayoutTypes) => {
   const putMuation = usePutFollower();

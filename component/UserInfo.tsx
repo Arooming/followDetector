@@ -1,6 +1,6 @@
 import ListLayout from "@/common/ListLayout";
 import { UserProfileInfoTypes } from "@/type/user";
-import * as styles from "../style/User/User.css";
+import * as styles from "../style/User/user.css";
 
 const UserInfo = ({ userInfoData }: { userInfoData: UserProfileInfoTypes }) => {
   return (

@@ -1,7 +1,7 @@
 import ListLayout from "@/common/ListLayout";
 import { FollowInfoDataTypes } from "@/type/user";
 import { useMemo } from "react";
-import * as styles from "../style/FollowList/FollowList.css";
+import * as styles from "../style/FollowList/followList.css";
 
 const FollowList = ({
   followInfoData,
