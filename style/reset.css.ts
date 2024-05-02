@@ -26,6 +26,7 @@ export const reset = [
   }),
 
   globalStyle("body", {
+    overflowY: "hidden",
     lineHeight: "1",
 
     backgroundColor: "#313131",
