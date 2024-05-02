@@ -6,7 +6,7 @@ export const headerWrapper = style({
   width: "100%",
   height: "7rem",
   padding: "1rem 2rem",
-  backgroundColor: "#333",
+  backgroundColor: "#252525",
 });
 
 export const headerTitle = style({

@@ -27,6 +27,8 @@ export const reset = [
 
   globalStyle("body", {
     lineHeight: "1",
+
+    backgroundColor: "#313131",
   }),
 
   globalStyle("menu, ol, ul", {
