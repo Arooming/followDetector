@@ -29,15 +29,15 @@ export const titleWrapper = style({
 
 export const title = style({
   color: "white",
-  fontSize: "1.7rem",
+  fontSize: "2rem",
 });
 
 export const followerNum = style({
   color: "#B3CBE8",
-  fontSize: "2rem",
+  fontSize: "2.2rem",
 });
 
 export const unfollowerNum = style({
   color: "#EFB6B6",
-  fontSize: "2rem",
+  fontSize: "2.2rem",
 });

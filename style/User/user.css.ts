@@ -7,5 +7,5 @@ export const userInfoWrapper = style({
 
   width: "100%",
 
-  margin: "2rem 0",
+  margin: "3rem 0",
 });
