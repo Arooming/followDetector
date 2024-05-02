@@ -21,6 +21,8 @@ export const titleWrapper = style({
   alignItems: "center",
   justifyContent: "center",
 
+  padding: "1rem 0rem",
+
   gap: "1rem",
 });
 

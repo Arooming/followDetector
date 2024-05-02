@@ -4,25 +4,31 @@ const wrapperBasic = style({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  flexDirection: "column",
+});
+
+export const listLayoutWrapper = style({
+  height: "40vh",
+  padding: "0 1.3rem",
+
+  overflowY: "auto",
 });
 
 export const contentsWrapper = style([
   wrapperBasic,
   {
-    flexDirection: "column",
-
     marginBottom: "1rem",
   },
 ]);
 
-export const followWrapper = style([
-  wrapperBasic,
-  {
-    marginTop: "1rem",
+export const followWrapper = style({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  marginTop: "1rem",
 
-    gap: "1.2rem",
-  },
-]);
+  gap: "1.2rem",
+});
 
 export const loginInfo = style({
   fontSize: "1.3rem",
