@@ -8,7 +8,7 @@ const wrapperBasic = style({
 });
 
 export const listLayoutWrapper = style({
-  height: "40vh",
+  height: "45vh",
   padding: "0 1.3rem",
 
   overflowY: "auto",
@@ -31,7 +31,8 @@ export const followWrapper = style({
 });
 
 export const loginInfo = style({
-  fontSize: "1.3rem",
+  fontSize: "1.5rem",
+  color: "#FFFFFFCC",
 });
 
 const followBtnBasic = style({

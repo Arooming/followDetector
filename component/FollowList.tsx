@@ -36,10 +36,10 @@ const FollowList = ({
               <p className={styles.title}>
                 {matched ? "맞팔 중인 사용자" : "내가 팔로우 안 한 사용자"}
               </p>
-              <p className={styles.title}>
-                {(matched ? matched.length : unfollowed.length) +
-                  `명`}
+              <p className={matched ? styles.followerNum : styles.unfollowerNum}>
+                {matched ? matched.length : unfollowed.length}
               </p>
+              <p className={styles.title}>명</p>
             </div>
 
             <ListLayout

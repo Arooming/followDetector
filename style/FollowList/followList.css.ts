@@ -22,11 +22,22 @@ export const titleWrapper = style({
   justifyContent: "center",
 
   padding: "1rem 0rem",
+  marginBottom: "1rem",
 
   gap: "1rem",
 });
 
 export const title = style({
-  marginBottom: "1rem",
-  fontSize: "1.5rem",
+  color: "white",
+  fontSize: "1.7rem",
+});
+
+export const followerNum = style({
+  color: "#B3CBE8",
+  fontSize: "2rem",
+});
+
+export const unfollowerNum = style({
+  color: "#EFB6B6",
+  fontSize: "2rem",
 });
